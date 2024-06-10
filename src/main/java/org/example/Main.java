@@ -32,6 +32,17 @@ public class Main {
         //toString von Course
         System.out.println(course1);
 
+        //Create Student, Teacher and Course with Builder pattern
+        Student student3 = Student.builder()
+                .id("454")
+                .build();
+        Teacher teacher2 = Teacher.builder()
+                .id("2")
+                .build();
+        Course course2 = Course.builder()
+                .id("2")
+                .name("German")
+                .build();
 
     }
 }
