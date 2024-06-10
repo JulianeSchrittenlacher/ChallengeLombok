@@ -43,12 +43,12 @@ public class Main {
                 .id("2")
                 .name("German")
                 .build();
-        course2.setTeacher(teacher2);
+        //course2.setTeacher(teacher2);
         allStudents.put("454",student3);
         System.out.println(allStudents);
         System.out.println(course2);
 
-        //Using With to create new Record with changed Value
+        //Using With to "update" the Record with changed value
         teacher2 = teacher2.withName("Hannemann");
         System.out.println(teacher2);
 

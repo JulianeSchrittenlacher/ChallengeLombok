@@ -1,20 +1,17 @@
 package org.example;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.Map;
 
-@Data
+@Value
 @AllArgsConstructor
-@NoArgsConstructor
 @Builder
 
+
 public class Course {
-    private String id;
-    private String name;
-    private Teacher teacher;
-    private Map<String, Student> students;
+    String id;
+    String name;
+    Teacher teacher;
+    Map<String, Student> students;
 }
